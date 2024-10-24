@@ -1,0 +1,39 @@
+:root {
+  --boxShadow-regular: 0 2px 4px rgba(0, 0, 0, 0.12),
+    0 0 6px rgba(0, 0, 0, 0.04);
+  --boxShadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  --boxShadow-deep: 0 2px 12px 0 rgba(0, 0, 0, 0.3);
+  color-scheme: light dark;
+  --john-locke-blue: rgb(13, 31, 78);
+  --wx-green-rgb: rgb(90, 183, 38);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
