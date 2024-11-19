@@ -39,6 +39,9 @@ jobs:
       - name: Build the project
         run: npm run build
 
+      - name: Create CNAME file
+        run: echo 'Magnet---Build-Your-First-Website.yehruei.site' > ./dist/CNAME
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
