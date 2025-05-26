@@ -38,7 +38,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHashHistory('/Magnet---Build-Your-First-Website/'),
+    history: createWebHashHistory('/'),
     routes,
 });
 
