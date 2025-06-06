@@ -1,22 +1,25 @@
-<script setup lang='ts'>
-import { ref } from 'vue'
+<script setup>
 import {
-    NLayout, NLayoutHeader, NLayoutContent, NLayoutFooter
-} from 'naive-ui'
+    NConfigProvider,
+} from 'naive-ui';
+const themeOverrides = {
+    common: {
+        "primaryColor": "#4350FFFF", // 这里可以自定义主题色
+        "primaryColorHover": "#747EFEFF",
+        "primaryColorPressed": "#182084FF",
+        "primaryColorSuppl": "#3B44BEFF",
+    },
+};
 </script>
 
 <template>
-    <n-layout class="container">
-        <n-layout-header>
-        </n-layout-header>
-        <n-layout-content content-style="padding: 24px;">
-            <router-view />
-        </n-layout-content>
-    </n-layout>
+    <n-config-provider :theme-overrides="themeOverrides">
+        <n-layout>
+            <n-layout-content>
+                <router-view />
+            </n-layout-content>
+        </n-layout>
+    </n-config-provider>
 </template>
 
-<style lang='less' scoped>
-.container {
-    min-height: 100vh;
-}
-</style>
+<style lang='less' scoped></style>

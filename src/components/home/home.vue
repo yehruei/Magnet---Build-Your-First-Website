@@ -1,9 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import {
-    NButton,
-    NImage
-} from 'naive-ui';
 
 const count = ref(0)
 </script>
@@ -24,6 +20,6 @@ const count = ref(0)
 <style scoped>
 .content {
     text-align: center;
-    padding: 20px;
+    padding: 2vw;
 }
 </style>
